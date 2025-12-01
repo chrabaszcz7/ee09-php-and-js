@@ -1,0 +1,4 @@
+html - latwe
+php - latwe
+css - lekko trudny
+kwerendy - latwe
