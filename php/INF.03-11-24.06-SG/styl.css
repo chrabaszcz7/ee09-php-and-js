@@ -1,0 +1,45 @@
+*{
+    font-family: Helvetica;
+}
+header, footer{
+    background-color: SaddleBrown;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.left{
+    width: 80%;
+}
+.left nav{
+    background-color: Peru;
+    height: 40px;
+    padding-top: 20px;
+}
+.left main{
+    height: 700px;
+    font-size: 120%;
+    overflow: auto;
+}
+.flex{
+    display: flex;
+}
+.right{
+    background-color: peru;
+    color: white;
+    width: 20%;
+    height: 760px;
+}
+a{
+    color: #DDD;
+    padding-left: 90px;
+    font-size: 140%;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
+img{
+    float: left;
+    margin: 30px;
+}
