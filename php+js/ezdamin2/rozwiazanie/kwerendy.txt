@@ -1,0 +1,4 @@
+SELECT * FROM tasks WHERE date="2025-06-12";
+SELECT title FROM tasks WHERE finished=0;
+SELECT title, horoscope FROM days d JOIN tasks t ON d.date=t.date WHERE ID=3;
+UPDATE tasks SET finished=1 WHERE ID=4;

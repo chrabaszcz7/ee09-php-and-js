@@ -1,0 +1,51 @@
+*{
+    text-align: center;
+    font-style: Georgia;
+    margin: 0;
+    padding: 0;
+}
+header,footer{
+    background-color: tomato;
+    color: mistyrose;
+    padding: 10px;
+}
+nav{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.first,.second,.third{
+    background-color: #FFAEA5;
+    height: 170px;
+    font-size: 200%;
+}
+.first{
+    background-color: MistyRose;
+}
+main{
+    background-color: MistyRose;
+    width: 80%;
+    height: 510px;
+    overflow: auto;
+}
+.third2,.second2{
+    display: none;
+}
+table{
+    margin: auto;
+    width: 60%;
+    border: 1px dashed indigo;
+}
+select,button{
+    margin: 20px;
+}
+dt{
+    font-weight: bold;
+    font-style: italic;
+}
+dt:hover{
+    font-size: 180%;
+}
+.flex{
+    display: flex;
+}

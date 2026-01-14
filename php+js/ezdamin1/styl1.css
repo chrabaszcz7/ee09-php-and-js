@@ -1,0 +1,47 @@
+*{
+    color: antiquewhite;
+}
+header,main,footer{
+    width: 70%;
+}
+header{
+    height: 70px;
+    background-color: #421c0a;
+    float: right;
+}
+main{
+    height: 350px;
+    background-color: #3f3007;
+    text-align: center;
+    float: right;
+}
+footer{
+    height: 50px;
+    background-color: #421c0a;
+    float: right;
+}
+aside{
+    height: 470px;
+    width: 30%;
+    background-color: #61270d;
+    float: left;
+}
+h1{
+    line-height: 60px;
+    margin: 0;
+}
+button{
+    padding: 5px 10px;
+    background-color: brown;
+    border: 1px solid #962727;
+}
+img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid burlywood;
+    border-radius: 10px;
+}
+.nazwa_potwora{
+    font-size: 1.25em;
+    color: #ebc38d;
+}

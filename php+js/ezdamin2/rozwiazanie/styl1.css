@@ -1,0 +1,44 @@
+header {
+    height: 100px;
+}
+header img {
+    float: left;
+}
+h2, header p {
+    text-align: center;
+}
+main {
+    display: flex;
+}
+article {
+    height: 600px;
+    width: 70%;
+    background-color: #ff8036;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 2px;
+    border: 1px solid black;
+}
+td:has(button), td:has(a) {
+    text-align: center;
+}
+table a {
+    padding: 5px;
+    text-decoration: none;
+}
+aside {
+    height: 600px;
+    width: 30%;
+    background-color: #fcff52;
+}
+footer {
+    padding: 20px 40px;
+}
+header, footer {
+    color: whitesmoke;
+    background-color: #420a0a;
+}

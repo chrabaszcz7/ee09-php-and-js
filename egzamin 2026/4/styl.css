@@ -1,0 +1,40 @@
+*{
+    font-family: Georgia;
+    text-align: center;
+    margin: 0;
+}
+header,footer{
+    background-color: #4BA3C7;
+    color: white;
+    height: 80px;
+    font-size: 120%;
+}
+.left,.right{
+    background-color: #EFEFEF;
+    height: 400px;
+    width: 25%;
+}
+.mid{
+    background-color: #90CAF9;
+    height: 400px;
+    width: 50%;
+}
+table{
+    margin-left: 10px;
+    width: 90%;
+    border: 1px solid #90CAF9;
+}
+tr td{
+    padding: 5px;
+    border: solid 1px #90CAF9;
+}
+tr:hover{
+    background-color: #90CAF9;
+}
+input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+main{
+    display: flex;
+}

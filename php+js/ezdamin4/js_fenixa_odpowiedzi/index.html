@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./zadania/skrypt1.js" defer></script>
+    <script src="./zadania/skrypt2.js" defer></script>
+    <script src="./zadania/skrypt3.js" defer></script>
+    <script src="./zadania/skrypt4.js" defer></script>
+    <script src="./zadania/skrypt5.js" defer></script>
+    <title>JS ZADANIA</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        ZADANIA JS | Autor: <span class="special">TheFenix2000#6380</span>
+      </div>
+      <div class="ex">
+        <div class="ex-title">TABLICA</div>
+        <div class="ex-container">
+          <div class="ex-container-left">
+            <span>Ilość elementów tablicy</span>
+            <input type="number" name="tableLength" id="tableLength" />
+            <span>Działanie</span>
+            <div class="row">
+              <input type="radio" value="+" name="operation" id="add" checked />
+              <label for="add">Dodawanie</label>
+            </div>
+            <div class="row">
+              <input type="radio" value="-" name="operation" id="sub" />
+              <label for="sub">Odejmowanie</label>
+            </div>
+            <div class="row">
+              <input type="radio" value="*" name="operation" id="mul" />
+              <label for="mul">Mnożenie</label>
+            </div>
+            <div class="row">
+              <input type="radio" value="/" name="operation" id="div" />
+              <label for="div">Dzielenie</label>
+            </div>
+            <button id="generateArray" onclick="createTable()">
+              Generuj tablicę
+            </button>
+          </div>
+          <div class="ex-container-right">
+            <h3>Wytyczne skryptu:</h3>
+            <p>
+              Napisz funkcję w <span class="special">zadania/skrypt1.js</span>,
+              która po naciśnięciu <span class="special">Generuj tablicę</span>:
+            </p>
+            <ul>
+              <li>
+                Pobierze wartości z inputa o id
+                <span class="special">tableLength</span> oraz zaznaczonego
+                inputa <span class="special">radio</span>
+              </li>
+              <li>
+                Stworzy tablicę o długości
+                <span class="special">wartości inputa</span> i wypisze ją w
+                formie pop-up na stronie
+              </li>
+              <li>
+                Wartości tablicy zawsze zaczynają się od
+                <span class="special">1</span> i zwiększają kolejno o
+                <span class="special">1</span>
+              </li>
+              <li>
+                Następnie w konsoli wyświetlą wynik operacji wybranej w
+                <span class="special">radio</span> wszystkich liczb
+              </li>
+              <li>
+                <b>
+                  W przypadku podania liczby mniejszej niż
+                  <span class="special">2</span> powinna zostać wypisana
+                  <span class="special">pusta tablica</span>, a w konsoli
+                  <span class="special">0</span>
+                </b>
+              </li>
+            </ul>
+            <h3>Przykładowe działanie:</h3>
+            <p>
+              Dla długości <span class="special">5</span> tablica wygląda tak:
+              <span class="special">[1, 2, 3, 4, 5]</span>
+            </p>
+            <p>
+              A wynik <span class="special">Mnożenia</span> wypisany w konsoli
+              to <span class="special">120</span>
+            </p>
+            <p>
+              A wynik <span class="special">Odejmowania</span> wypisany w
+              konsoli to <span class="special">-13</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="ex">
+        <div class="ex-title">GENEROWANIE ELEMENTÓW CZ.1</div>
+        <div class="ex-container">
+          <div class="ex-container-left">
+            <span>Tytuł artykułu</span>
+            <input type="text" id="productTitle" />
+            <span>Cena</span>
+            <input type="number" id="productPrice" />
+            <span>Ilość</span>
+            <input type="number" id="productQuantity" />
+            <button onclick="addProduct()">Dodaj produkt</button>
+          </div>
+          <div class="ex-container-right">
+            <h3>Wytyczne skryptu:</h3>
+            <p>
+              Napisz funkcję w <span class="special">zadania/skrypt2.js</span>,
+              która po naciśnięciu <span class="special">Dodaj produkt</span>:
+            </p>
+            <ul>
+              <li>
+                Pobierze wartości z inputów o id
+                <span class="special">productTitle</span>,
+                <span class="special">productPrice</span>,
+                <span class="special">productQuantity</span>
+              </li>
+              <li>
+                Stworzy nowy wiersz w poniższej tabeli o id
+                <span class="special">products</span>, o komórkach:
+                <ol>
+                  <li>
+                    <b>Id</b> - generowanie automatycznie, zwiększa się
+                    każdorozowo po dodaniu nowego produktu, zaczynając od
+                    <span class="special">1</span>
+                  </li>
+                  <li><b>Tytuł</b> - wartość z formularza</li>
+                  <li>
+                    <b>Cena</b> - wartość z formularza musi być w formacie
+                    "<span class="special">12 zł</span>"
+                  </li>
+                  <li><b>ilość</b> - wartość z formularza</li>
+                </ol>
+              </li>
+              <li>
+                <b
+                  >Gdy którakolwiek z komórek jest
+                  <span class="special">pusta</span> - nic nie rób</b
+                >
+              </li>
+            </ul>
+            <hr />
+            <h3>TABELA PRODUKTÓW</h3>
+            <table>
+              <tbody id="products">
+                <tr id="first">
+                  <td class="title">Id</td>
+                  <td class="title">Tytuł</td>
+                  <td class="title">Cena</td>
+                  <td class="title">Ilość</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>Marmolada</td>
+                  <td>6 zł</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="ex">
+        <div class="ex-container">
+          <div class="ex-title">FUNKCJA DLA DANEGO ELEMENTU</div>
+          <div class="ex-container-left">
+            <div class="row">
+              <div class="square"><span>1</span></div>
+              <div class="square"><span>2</span></div>
+            </div>
+            <div class="row">
+              <div class="square"><span>3</span></div>
+              <div class="square"><span>4</span></div>
+            </div>
+          </div>
+          <div class="ex-container-right">
+            <h3>Wytyczne skryptu:</h3>
+            <p>
+              Po lewej stronie znajdują się 4 bloki klasy
+              <span class="special">square</span>, twoim zadaniem jest napisanie
+              w <span class="special">zadania/skrypt3.js</span> programu, który:
+            </p>
+            <ul>
+              <li>
+                po <span class="special">kliknięciu</span> w dany element
+                wyświetli w <span class="special">alercie</span> jego
+                <span class="special">wartość tekstową</span> widoczną w html
+              </li>
+              <li><b> Nie używaj funkcji argumentowych </b></li>
+              <li><b>Nie dopisuj nic w HTML, ani nie zmieniaj</b></li>
+              <li><b>Wykorzystaj foreach i jeden z queryselectorów</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ex">
+        <div class="ex-container">
+          <div class="ex-title">GENEROWANIE ELEMENTÓW CZ.2</div>
+          <div class="ex-container-left">
+            <span>Wprowadź wartość</span>
+            <input type="text" id="newOption" />
+            <select onchange="alertOption()" name="mySelect" id="mySelect">
+              <option value="wartość">wartość</option>
+              <option value="wartość 2">wartość 2</option>
+            </select>
+            <button onclick="generateSelectOption()">
+              Generuj wartość select
+            </button>
+          </div>
+          <div class="ex-container-right">
+            <h3>Wytyczne skryptu:</h3>
+            <p>
+              Uzupełnij odpowiednio funkcje w
+              <span class="special">zadania/skrypt4.js</span>, tak by:
+            </p>
+            <ul>
+              <li>
+                Pobierały wartość z inputa o id
+                <span class="special">newOption</span>
+              </li>
+              <li>
+                Tworzyły nową opcję do wyboru w select o id
+                <span class="special">mySelect</span>
+              </li>
+              <li>
+                Każdorazowe wybranie opcji w select - wyświetla pop-up z tą
+                opcją w formacie "<span class="special"
+                  >Wybrana opcja: opcja</span
+                >"
+              </li>
+              <li>
+                Po dodaniu należy <span class="special">wyczyścić</span> input
+              </li>
+              <li>
+                <b>
+                  Jeżeli input jest pusty -
+                  <span class="special">nic nie rób</span>
+                </b>
+              </li>
+              <li>
+                <b> Nie zmieniaj HTML </b>
+              </li>
+              <li>
+                <b>Wykorzystaj createElement()</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ex">
+        <div class="ex-container">
+          <div class="ex-title">GENEROWANIE ELEMENTÓW CZ.3</div>
+          <div class="ex-container-left">
+            <span> Ilość inputów </span>
+            <input type="number" id="inputsQ" oninput="genInputs()" />
+            <button onclick="sumInputs()">LICZ</button>
+            <div id="inputs"></div>
+          </div>
+          <div class="ex-container-right">
+            <h3>Wytyczne skryptu:</h3>
+            <p>
+              Uzupełnij odpowiednio funkcje w
+              <span class="special">zadania/skrypt5.js</span>, tak by:
+            </p>
+            <ul>
+              <li>
+                Pobierały wartość z inputa o id
+                <span class="special">inputsQ</span>
+              </li>
+              <li>
+                Generowały tyle inputów typu numerycznego ile
+                <span class="special">zostało wpisane w inpucie</span>
+              </li>
+              <li>
+                Nadaj każdemu z inputów klasę
+                <span class="special">myInput</span>, którą potem wykorzystasz w
+                querySelectorAll
+              </li>
+              <li>
+                Inputy dodawaj do diva o id <span class="special">inputs</span>
+              </li>
+              <li>
+                Po kliknieciu przycisku policz sume z wartości z każdego
+                <span class="special">stworzonego inputu</span>, a nastepnie
+                wypisz ją w pop-up w formacie "<span class="speci"
+                  >Suma: wartość_sumy</span
+                >"
+              </li>
+              <li>
+                <b> Wykorzystaj foreach </b>
+              </li>
+              <li>
+                <b> Nie zmieniaj nic w HTML </b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
